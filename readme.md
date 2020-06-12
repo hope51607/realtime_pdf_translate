@@ -5,7 +5,7 @@
 ## Dependency
 - Windows
 - python3
-- win32clipboard
+- pypiwin32
 - selenium
 - pynput
 
@@ -13,7 +13,7 @@
 1. 
     install dependencies
     ```sh
-    pip install win32clipboard selenium pynput
+    pip install pypiwin32 selenium pynput
     ```
 2. 
     edit source code line 6 to use your prefer browser 
