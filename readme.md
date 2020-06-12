@@ -17,7 +17,7 @@
     ```
 2. 
     Edit source code line 6 to use your prefer browser.
-     ( default is my prefer: new edge )
+    - default is my prefer browser: new Microsft Edge
 
 3. 
     Make sure your browser driver is in your environment path.
