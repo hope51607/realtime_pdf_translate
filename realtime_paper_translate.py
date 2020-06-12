@@ -1,7 +1,6 @@
 import win32clipboard as wc
 import win32con
 from selenium import webdriver
-from selenium.common.exceptions import ElementNotInteractableException
 from pynput.keyboard import Key, Listener
 
 driver = webdriver.Edge()
@@ -10,7 +9,7 @@ driver.get("https://translate.google.com/")
 try:
     driver.find_element_by_xpath('/html/body/div[2]/div[1]/div/div[3]/div/div').click()
     driver.find_element_by_xpath('//*[@id="gb"]/div[2]/div[4]/div/div/div/div[2]/div/a[1]').click()
-except ElementNotInteractableException as e:
+except:
     pass
 
 def stripClipboard():
