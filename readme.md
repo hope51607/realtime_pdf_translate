@@ -15,14 +15,20 @@
     ```sh
     pip install win32clipboard selenium pynput
     ```
-
 2. 
+    edit source code to use your prefer browser 
+     ( default is my prefer: new edge )
+
+3. 
+    Make sure your browser driver is in your environment path
+    
+4. 
     run script
     ```sh
     python realtime_paper_translate.py
     ```
 
-3. 
+5. 
     copy paper and enjoy
 
 ## Demo
