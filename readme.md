@@ -16,11 +16,12 @@
     pip install pypiwin32 selenium pynput
     ```
 2. 
-    edit source code line 6 to use your prefer browser 
+    Edit source code line 6 to use your prefer browser.
      ( default is my prefer: new edge )
 
 3. 
-    Make sure your browser driver is in your environment path
+    Make sure your browser driver is in your environment path.
+    - You can find more information from [here](https://www.selenium.dev/documentation/en/webdriver/driver_requirements/#adding-executables-to-your-path).
     
 4. 
     run script
