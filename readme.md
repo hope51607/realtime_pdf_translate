@@ -1,4 +1,4 @@
-# Realtime Paper Translate
+# Realtime PDF Translate
 ### 即時論文翻譯
 
 
@@ -16,7 +16,7 @@
     pip install win32clipboard selenium pynput
     ```
 2. 
-    edit source code to use your prefer browser 
+    edit source code line 6 to use your prefer browser 
      ( default is my prefer: new edge )
 
 3. 
@@ -25,11 +25,11 @@
 4. 
     run script
     ```sh
-    python realtime_paper_translate.py
+    python realtime_pdf_translate.py
     ```
 
 5. 
-    copy paper and enjoy
+    copy pdf text and enjoy
 
 ## Demo
 ![Demo](demo.gif)
@@ -41,7 +41,7 @@
 
 
 > 期末報告要報 paper，對英文苦手來說真的是生不如死，
-> 論文 pdf 複製的文字下來會一堆斷行，
+> 論文 pdf 複製的文字下來會一堆換行，
 > 丟翻譯就會翻得很怪，
-> 手動去掉斷行實在太麻煩了，
+> 手動去掉換行實在太麻煩了，
 > 就寫了這個來逃避現實中 QQ
