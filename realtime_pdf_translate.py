@@ -3,6 +3,8 @@ import win32con
 from selenium import webdriver
 from pynput.keyboard import Key, Listener
 
+print('You can press ESC to quit the process')
+
 driver = webdriver.Edge()
 driver.get("https://translate.google.com/")
 

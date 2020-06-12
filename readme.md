@@ -11,26 +11,26 @@
 
 ## How To Use
 1. 
-    install dependencies
+    Install dependencies
     ```sh
     pip install pypiwin32 selenium pynput
     ```
 2. 
-    Edit source code line 6 to use your prefer browser.
+    Edit source code line 8 to use your prefer browser
     - default is my prefer browser: new Microsft Edge
 
 3. 
-    Make sure your browser driver is in your environment path.
-    - You can find more information from [here](https://www.selenium.dev/documentation/en/webdriver/driver_requirements/#adding-executables-to-your-path).
+    Make sure your browser driver is in your environment path
+    - You can find more information from [here](https://www.selenium.dev/documentation/en/webdriver/driver_requirements/#adding-executables-to-your-path)
     
 4. 
-    run script
+    Run script
     ```sh
     python realtime_pdf_translate.py
     ```
 
 5. 
-    copy pdf text and enjoy
+    Copy pdf text and enjoy
 
 ## Demo
 ![Demo](demo.gif)
