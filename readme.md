@@ -1,5 +1,5 @@
 # Realtime PDF Translate
-### 即時論文翻譯
+### 即時 PDF 翻譯
 
 
 ## Dependency
