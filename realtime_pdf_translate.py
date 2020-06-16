@@ -15,24 +15,30 @@ except:
     pass
 
 def stripClipboard():
-    global driver
-    # 開剪貼簿，拿複製內容
-    wc.OpenClipboard()
-    txt = wc.GetClipboardData(win32con.CF_UNICODETEXT)
-    txt = str(txt).strip()
-    # 按行分割
-    txt = txt.splitlines()
-    # 換成空格
-    txt = ' '.join(txt)
-    # 把空格都變一個
-    txt = ' '.join(txt.split())
-    # 清空剪貼簿
-    wc.EmptyClipboard()
-    # 把轉換文的問自丟回剪貼簿
-    wc.SetClipboardData(win32con.CF_UNICODETEXT, txt)
-    wc.CloseClipboard()
-    # 餵 google 翻譯
-    driver.execute_script("document.getElementById('source').value = String.raw`{}`;".format(txt))
+    try:
+        global driver
+        # 開剪貼簿，拿複製內容
+        wc.OpenClipboard()
+        txt = wc.GetClipboardData(win32con.CF_UNICODETEXT)
+        txt = str(txt).strip()
+        # 按行分割
+        txt = txt.splitlines()
+        # 換成空格
+        txt = ' '.join(txt)
+        # 把空格都變一個
+        txt = ' '.join(txt.split())
+        # 清空剪貼簿
+        wc.EmptyClipboard()
+        # 把轉換文的問自丟回剪貼簿
+        wc.SetClipboardData(win32con.CF_UNICODETEXT, txt)
+        wc.CloseClipboard()
+        # 餵 google 翻譯
+        driver.execute_script("document.getElementById('source').value = String.raw`{}`;".format(txt))
+    except TypeError:
+        print("Type Error: Maybe your clip is not text")
+        wc.CloseClipboard()
+
+   
 
 def on_press(key):
     # print('{0} pressed'.format(key))
