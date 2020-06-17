@@ -16,7 +16,7 @@
     pip install pypiwin32 selenium pynput
     ```
 2. 
-    Edit source code line 8 to use your prefer browser
+    Edit source code line 11 to use your prefer browser
     - default is my prefer browser: new Microsft Edge
 
 3. 
