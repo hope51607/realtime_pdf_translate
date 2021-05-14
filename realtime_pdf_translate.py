@@ -53,8 +53,8 @@ def stripClipboard():
             # 把轉換文的問自丟回剪貼簿
             wc.SetClipboardData(win32con.CF_UNICODETEXT, txt)
             # 餵 google 翻譯
-            driver.execute_script(
-                "document.getElementById('source').value = String.raw`{}`;".format(txt))
+            driver.find_element_by_tag_name('textarea').clear()
+            driver.find_element_by_tag_name('textarea').send_keys(txt)
         except TypeError:
             print("Type Error: Maybe your clip is not text")
         finally:
